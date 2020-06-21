@@ -7,26 +7,35 @@
     width:100vw;
 }
 
-.mainpage h1 {
+.name{
+  top: 200px;
+}
+
+.name h1 {
     position: absolute;
     width: 100%;
     text-align: center;
-    top: 29vh;
+    top: 200px;
     color: rgba(245, 237, 237, 0.918);
     font-family: 'Trebuchet MS', Helvetica, sans-serif;
     letter-spacing: .7em;
     font-size: 25pt;
     font-weight: 200;
     text-transform: uppercase;
+    bottom: 20px;
+}
+
+.designation{
+  margin-top: 320px;
 }
 //rgba(255, 255, 255, 0.26); rgba(255, 255, 255, 0.445);
-.mainpage h3 {
+.designation h3 {
     position: absolute;
     width: 100%;
     text-align: center;
     color:white;
     font-family: 'Trebuchet MS', Helvetica, sans-serif;
-    top: 40vh;
+    //top: 40vh;
     letter-spacing: .4em;
     font-size:1.5vw;
     font-weight: 1200;
@@ -83,7 +92,7 @@
      justify-content: center;
     position: relative;
     display: inline-block;
-    margin-top: 32rem;
+    margin-top: 150px;
     padding: 1rem 4rem 1rem 2rem;
     width: 200px;
     height: 50px;
