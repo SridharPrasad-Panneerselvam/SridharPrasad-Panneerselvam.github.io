@@ -1,0 +1,75 @@
+<section id ="Contact">
+<div class="contactDiv">
+<br><br>
+    
+    <mat-card-title class="cardTitle">CONTACT ME</mat-card-title>
+    <mat-card class="contactCard">
+        <div class="container flex">
+            <div class="header">
+              I'd love to hear from you! 
+            </div>
+            <br> <br> <br>
+            <div class="highlight">
+                Contact - <a href="mailto:panneerselvam.s@northeastern.edu" class="mailClass">panneerselvam.s@northeastern.edu</a>
+            </div>
+            <!-- <form id="contact" (ngSubmit)="submit()" [formGroup]="contact" class="form-g" #formDirective="ngForm" >
+              <div class="form-group">
+                <mat-form-field>
+                <input type="text" id="name" placeholder="Name" formControlName="name" matInput required>
+                </mat-form-field>
+               </div>
+              <div class="form-group"> 
+                <input placeholder="Email" type="email" id="email" formControlName="email" required/> </div>
+              <div class="form-group"> 
+                <textarea id="message" placeholder="Message" formControlName="message" style="font-family: Verdana;"required></textarea>  
+              </div>
+              <input type="submit" class="button" value="Submit" style="margin-left: 350px;" [disabled]="!contact.valid">
+            </form> -->
+            <form [formGroup]="contact" id="contact" class="form-g" #formDirective="ngForm" (ngSubmit)="submit()">
+              <div class="form-group">
+                <mat-form-field>
+                  <input type="text" formControlName="name" id="name" matInput placeholder="Name" style="color: rgb(7, 2, 2) !important;"required>
+                  <mat-error *ngIf="rf.name.invalid">{{getRegisterErrorMessage('name')}}</mat-error>
+                </mat-form-field>
+               </div>
+              <div class="form-group"> 
+                <mat-form-field>
+                  <input type="text" formControlName="email" matInput id="email" placeholder="E-Mail" required>
+                  <mat-error *ngIf="rf.email.invalid">{{getRegisterErrorMessage('email')}}</mat-error>
+              </mat-form-field> </div>
+              <div class="form-group"> 
+                <mat-form-field>
+                  <textarea id="message" placeholder="Message" matInput formControlName="message" required></textarea>  
+                  <mat-error *ngIf="rf.message.invalid">{{getRegisterErrorMessage('message')}}</mat-error>
+              </mat-form-field> 
+              </div>
+                <button type="submit" class="button" style="margin-left: 350px;"> Submit </button>
+            </form>
+          </div>
+
+    </mat-card>
+    
+</div>
+</section>
+
+<div id="success" class="modal">
+    <div class="modal-content" *ngIf="expan == true">
+        <span (click)="spanClick()" class="close">&times;</span>
+        <div class="center">
+          <h2><i>I've got your mail!</i></h2>
+          <p>Thanks for getting in touch, {{name}}! I will be in touch soon.</p>
+        </div>
+    </div>
+  </div>
+  
+  <div id="retry" class="modal">
+    <div class="modal-content" *ngIf="expan == true">
+        <span (click)="span()" class="close">&times;</span>
+        <div class="center">
+          <h2> Oops! </h2>
+          <p> Would you mind sending your thoughts again? <br>
+            You can also reach out to me at <a href="panneerselvam.s@northeastern.edu"> <i class="fas fa-envelope"></i></a>
+          </p>
+        </div>
+    </div>
+  </div>
