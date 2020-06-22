@@ -146,70 +146,56 @@
     }
 }
 
-.links {
-  margin-top: 3%;
+.link {
+  margin-top: 5%;
   //color:white ;
-  .fa-linkedin:hover {
+  .fa-linkedin {
       transform: scale(1.1);
       color: rgb(51, 118, 176);
       transition: 0.4s all;
+      cursor: pointer;
   }
-  .fa-instagram:hover {
+  .fa-instagram {
       transform: scale(1.1);
       color:#ac1453;
       transition: 0.4s all;
+      cursor: pointer;
   }
-  .fa-github:hover {
+  .fa-github {
       transform: scale(1.1);
       transition: 0.4s all;
       color: rgb(78, 75, 75);
+      cursor: pointer;
   }
-  .fa-facebook-square:hover {
+  .fa-facebook-square{
       transform: scale(1.1);
       color:#3b5998;
       transition: 0.4s all;
+      cursor: pointer;
   }
-  .fa-map-marker:hover {
+  .fa-map-marker{
       transform: scale(1.1);
       color:#158b05;
       transition: 0.4s all;
+      cursor: pointer;
   }
-  .fa-twitter:hover{
+  .fa-twitter{
       transform: scale(1.1);
       color: #38A1F3;
       transition: 0.4s all;
+      cursor: pointer;
   }
 }
 
-.links a{
+.link a{
   margin-left: 11.5%;
   color: #1b242f;
+  cursor: pointer;
 }
 .links a:visited {
   color: #1b242f;
 }
 
-// button {
-//   appearance: none;
-//   -moz-appearance: none;
-//   -webkit-appearance: none;
-  
-//   display: inline-block;
-//   position: relative;
-//   border: 2px solid black;
-//   width: 100%;
-//   height: 3.3333em;
-//   font-size: 1.2em;
-//   text-align: center;
-//   text-transform: uppercase;
-//   text-decoration: none;
-//   line-height: 3.3333em;
-//   vertical-align: middle;
-//   color: black;
-//   z-index: 1;
-//   overflow: hidden;
-//   background: #eee;
-// }
   
 .horizontal-flip-hover {
   text-indent: -100em;
